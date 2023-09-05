@@ -7,26 +7,41 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <style>
-        img {
-            max-width: 250px;
-            max-height: 200px;
-            min-width: 150px;
-            min-height: 100px;
+        body {
+            background-color: rgb(152, 152, 152);
+            font-style: italic;
+            color: rgba(187, 187, 187, 0.559);
+        }
+
+        .img_big {
+            max-width: 400px;
+            max-height: 400px;
+            width: 75%;
+        }
+
+        button {
+            border-radius: 12px;
+            background-color: rgba(52, 52, 52, 0.148);
+            color: rgba(187, 187, 187, 0.559);
         }
 
         div {
             padding: 5px;
+            background-color: rgba(52, 52, 52, 0.148);
         }
 
         .borda {
             border: groove;
             padding: 25px;
             margin: 2%;
+            border-color: rgba(0, 0, 0, 0.454);
         }
 
         .traco {
             border: double;
             padding: 15px;
+            border-color: rgba(0, 0, 0, 0.454);
+
         }
 
         .centro {
@@ -40,6 +55,14 @@
             min-width: 150px;
             min-height: 100px;
         }
+
+        .bcgcolor {
+            background-color: rgba(53, 53, 53, 0.575);
+        }
+
+        .bt_bc {
+            background-color: rgba(0, 0, 0, 0);
+        }
     </style>
     <title>Document</title>
 </head>
@@ -47,44 +70,55 @@
 <body>
     <div class="container">
         <div class="row borda">
-            <div class="col-4 traco">
+            <div class="col-4 traco bcgcolor centro">
+                <p>
+                    pagina destinada a aula de desenvolvimento web
+                </p>
+                <p>
+                    usamos HTML,CSS e JavaScript
+                </p>
+                <p>
+                    feito por Pedro Henrique
+                </p>
             </div>
-            <div class="col-8 traco">
-                <button id="fistImage" onclick="addimage()"> fist image</button>
-                <img style="height: 300px;width:500px;" id="myImg">
+            <div class="col-8 traco bcgcolor">
+                <img class="img_big" id="myImg">
+                <div class="col bt_bc">
+                    <button id="fistImage" onclick="addimage()"> One Piece</button>
+                </div>
             </div>
         </div>
 
 
         <div class="row borda">
-            <div class="col traco centro">
+            <div class="col  traco centro bcgcolor">
                 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.FoTEfWY4osXQ69PeWiRQXgHaNq%26pid%3DApi&f=1&ipt=5aacaa16163ebd0c346ad0fb5568bf7c3c47f5412058d3cd98b64b7110aeb78e&ipo=images"
-                    alt="">
-                <div class="col">
+                    alt="" class="img">
+                <div class="col bt_bc   ">
                     <a href="luffy.html"><button>
                             Monkey D Luffy
                         </button></a>
                 </div>
             </div>
-            <div class="col traco centro">
+            <div class="col  traco centro bcgcolor">
                 <img class="img"
                     src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.uiSjskpNlcOviYyISOdGXAHaKy%26pid%3DApi&f=1&ipt=b0b6baafbc82cdb77e6451f442ff8eff3b0b7b2ee33463ab83b8cb6fe2741855&ipo=images"
                     alt="">
-                <div class="col">
+                <div class="col bt_bc">
                     <a href="zoro.html"><button>
                             Roronoa Zoro
                         </button></a>
                 </div>
             </div>
 
-            <div class="col traco centro">
-                <img class="img" style="height:200px;width:100px;"
+            <div class="col traco centro bcgcolor">
+                <img class="img"
                     src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.explicit.bing.net%2Fth%3Fid%3DOIP.3mFDPRiIiIsdh3ke-Z2B9gHaF7%26pid%3DApi&f=1&ipt=2320241cc40d3b4277a54ecc6bb19a35c97d1249936384be5ecffc7a943ff4d2&ipo=images"
                     alt="">
-                <div class="col">
+                <div class="col bt_bc">
                     <a href="ace.html"><button>
-                        Portgas D Ace
-                    </button></a>
+                            Portgas D Ace
+                        </button></a>
                 </div>
 
             </div>
@@ -105,9 +139,10 @@
 
     <script>
         function addimage() {
+            //get pega o id e coloca o src da imagem
             document.getElementById("myImg").src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.N-M6wmtgCTed-CyKAs-sUAHaEK%26pid%3DApi&f=1&ipt=98a88c9299d8bac75b993725a4ef718c4ecf4fda7bfee97b63bceceec78700bf&ipo=images";
             fist = document.getElementById("fistImage");
-            fist.style = "display:none"
+            fist.style = "display:none" // faz com que o botao desapareca
         }
         function redirect() {
             window.location.href = "test.html";
