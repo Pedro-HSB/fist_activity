@@ -5,20 +5,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        img {
+            max-width: 200px;
+            max-height: 150px;
+            /* width: 500px;
+            height: 350px; */
+            width: 100%;
+            height: 80%;
+        }
+
+        body {
+            background-color: rgba(130, 248, 163, 0.518);
+            color: aliceblue;
+            padding: 0;
+            margin: 0;
+        }
+        .p_size{
+            padding: 0;
+            margin: 0;
+            font-size: large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .div_primal {
+            width: 100%;
+            height: 100%;
+        }
+
+        .img_aling {
+            display: flex;
+        }
+
+        .img_sizes {
+            padding-left: 7%;
+            padding-right: 7%;
+            padding-top: 2%;
+            width: 100%;
+            height: 150px;
+        }
+
+        .centro {
+            align-items: center;
+            text-align: center;
+        }
+
+        .div_size {
+            height: 100%;
+            padding: 5px;
+            border: 5px;
+            border-radius: 5px;
+            border-style: groove;
+            border-color: rgb(50, 150, 79);
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="col"><img
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.PcmRZaLcNKuCZzYx6NZFWgAAAA%26pid%3DApi&f=1&ipt=2124b9739d44364ba45e474e23ef27ac6ecffb0e568a5cfba0a623bbf9fc2bf4&ipo=images"
-                alt=""></div>
-        <div class="col"><img
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.h7QF8BS3MRKOpKJMcrrMMQHaEK%26pid%3DApi&f=1&ipt=481b800913060d79782cfefdce14a638b7bbe2dd0b2251a4826dd3fb0a73e5c9&ipo=images"
-                alt=""></div>
-        <div class="col"><img
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.VOZ_82faWjoHybU46jfbFAHaKe%26pid%3DApi&f=1&ipt=1e3ebc2fd5102d060c5051e4d8652be01203eaba5cc21a650a2205c46fd46680&ipo=images"
-                alt=""></div>
-        <a href="index.html"><button type="button">back</button></a>
+    <div class="container div_primal">
+        <div class="row">
+            <div class="col centro p_size">
+                <p>pagina destinada ao
+                <h2>Roronoa Zoro</h2>
+                </p>
+            </div>
+        </div>
+        <div class="row div_size img_aling">
+            <div class="col img_sizes">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.PcmRZaLcNKuCZzYx6NZFWgAAAA%26pid%3DApi&f=1&ipt=2124b9739d44364ba45e474e23ef27ac6ecffb0e568a5cfba0a623bbf9fc2bf4&ipo=images"
+                    alt="">
+            </div>
+            <div class="col img_sizes">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.h7QF8BS3MRKOpKJMcrrMMQHaEK%26pid%3DApi&f=1&ipt=481b800913060d79782cfefdce14a638b7bbe2dd0b2251a4826dd3fb0a73e5c9&ipo=images"
+                    alt="">
+            </div>
+            <div class="col img_sizes">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.VOZ_82faWjoHybU46jfbFAHaKe%26pid%3DApi&f=1&ipt=1e3ebc2fd5102d060c5051e4d8652be01203eaba5cc21a650a2205c46fd46680&ipo=images"
+                    alt="">
+            </div>
+        </div>
+        <div class="row div_size img_aling">
+            <div class="col img_sizes">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.qzN5hXfvNG_PgxmO9-_FDQHaJ4%26pid%3DApi&f=1&ipt=896ff0aa3cd39f9daebec2f86bbfd66bd268c064b900250f3da7c7d9121ab253&ipo=images"
+                    alt="">
+            </div>
+            <div class="col img_sizes">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.oQajblDwqQ3rr2SjowTFgQHaIU%26pid%3DApi&f=1&ipt=b02046de15b5dccee111a5e402fb547540ab0703b2f5492cf8052e653d86e85d&ipo=images"
+                    alt="">
+            </div>
+            <div class="col img_sizes">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HmWYqFhL0oQDvkHoSbGY6gHaHa%26pid%3DApi&f=1&ipt=ecdbefaa1ebdfb635b581365e4be3d0ee916de3f85c76510ab3aece896165af8&ipo=images"
+                    alt="">
+            </div>
+        </div>
+        <div class="row div_size img_aling">
+            <div class="col img_sizes">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.xLNnSFVF_HSLDL6-vPrF9AHaHa%26pid%3DApi&f=1&ipt=1c4de19d2a78450b00f610956ef79da523efb05ca41bc70fee9b18b9656e7de8&ipo=images"
+                    alt="">
+            </div>
+            <div class="col img_sizes">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.yk8klS4MZblHclV3TycfiQHaGa%26pid%3DApi&f=1&ipt=5025f2c0dfe1a79d142e9baaa86ba0cb8d2c53f1d83bbe98a492722211065a33&ipo=images"
+                    alt="">
+            </div>
+            <div class="col img_sizes">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.OneJbTupcKVO_i3neqvEqAHaDJ%26pid%3DApi&f=1&ipt=1822e478ad8bbe4a7535dd245ff06d26b48bb15ae62a782e5eb0eee897967913&ipo=images"
+                    alt="">
+            </div>
+        </div>
+        <div class="row centro bt_inline">
+            <div class="col">
+                <a href="luffy.html"><button>
+                        Monkey D Luffy
+                    </button></a>
+            </div>
+            <div class="col">
+                <a href="index.html">
+                    <button type="button">back</button>
+                </a>
+            </div>
+            <div class="col">
+                <a href="zoro.html"><button>
+                        Roronoa Zoro
+                    </button></a>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
