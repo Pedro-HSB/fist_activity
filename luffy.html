@@ -6,30 +6,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <style>
-            img{
-                width: 200px;
-                height: 150px;
-            }
-        </style>
+    <style>
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            width: 100%;
+            background-color: rgb(235, 216, 182);
+            color: rgb(145, 109, 47)
+        }
+
+        .borda {
+            border: 3px;
+            border-style: groove;
+            border-color: rgb(225, 156, 38);
+        }
+
+        .center {
+            align-items: center;
+            align-content: center;
+            text-align: center;
+        }
+
+        .img_margin {
+            padding: 5px;
+        }
+
+        button {
+            color: rgb(145, 109, 47);
+            background-color: rgba(229, 189, 121, 0.582);
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .margin_p {
+            margin-top: 3%;
+        }
+
+        #more1,#more2,#more3,#more4 {
+            display: none;
+        }
+    </style>
     <title>Document</title>
 </head>
 
-<body>
-    <div class="container">
-        <div class="col"><img
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.knCDSgXD0RHls-dYMDp63AHaNK%26pid%3DApi&f=1&ipt=755b4ade5aa101fa1d48718a03e1d3e429c5df8a58180037581343cb4ce5c9f1&ipo=images"
-                alt=""></div>
-        <div class="col"><img
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.qi4PIIrmCZWM7kZyVX1fmAHaFj%26pid%3DApi&f=1&ipt=8663315a82156f0435f50fc80aa35e909e6eccc3f1d4c3cc99229d9dd76a1ab0&ipo=images"
-                alt=""></div>
-        <div class="col"><img
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.1z4_ijnIIjassEZ2rsdUZgHaFO%26pid%3DApi&f=1&ipt=a2426e76b162a3e32cd45c8dd40d037f89b209b6446c966d2dfb834cce097880&ipo=images"
-                alt=""></div>
-        <div class="row  ">
+<body class="borda">
+    <div class="container center">
+        <p>pagina destinada ao
+        <h2> Monkey D Luffy</h2>
+        </p>
+        <div class="row">
+            <div class="col img_margin borda">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.aIJ27hsFLKcIzmC1Wfs6agHaEK%26pid%3DApi&f=1&ipt=6b4bb5a64dc3868eaeed2b5adec7ad28eedf4b4ef27b3e45466a3f4435dfc04c&ipo=images"
+                    alt="">
+            </div>
+            <div class="col center margin_p">
+                <p>Depois de vencer a guerra de Wano, a recompensa de Luffy aumentou para 3 bilhões de berries e ele foi
+                    nomeado <span id="dots1">...</span><span id="more1"> como um
+                        dos novos Yonkou. Esse foi um grande passo para Luffy e seu bando no geral porque agora eles são
+                        conhecidos como uma das
+                        quatro tripulações piratas mais fortes do mundo.</span></p>
+                <a onclick="text1()" id="myBtn1"><b><i>Read more</i></b></a>
+            </div>
+            <div class="col img_margin borda">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.1z4_ijnIIjassEZ2rsdUZgHaFO%26pid%3DApi&f=1&ipt=a2426e76b162a3e32cd45c8dd40d037f89b209b6446c966d2dfb834cce097880&ipo=images"
+                    alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col center margin_p">
+                <p>Para dar vida ao anime de One Piece, a Toei Animation selecionou uma voz marcante e que <span
+                        id="dots2">...</span><span id="more2"> conseguiu acompanhar Luffy por
+                        todos esses anos. Na versão japonesa do anime, Luffy é dublado por Mayumi Tanaka, ela dá a sua
+                        voz ao protagonista a
+                        mais de vinte anos e deixou sua marca registrada no mundo inteiro.</span></p>
+                <a onclick="text2()" id="myBtn2"><b><i>Read more</i></b></a>
+            </div>
+            <div class="col img_margin borda">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.qi4PIIrmCZWM7kZyVX1fmAHaFj%26pid%3DApi&f=1&ipt=8663315a82156f0435f50fc80aa35e909e6eccc3f1d4c3cc99229d9dd76a1ab0&ipo=images"
+                    alt="">
+            </div>
+            <div class="col center margin_p">
+                <p>Em um SBS do mangá, Oda revelou que Luffy se assemelha a um girassol, <span id="dots3">...</span><span
+                        id="more3"> um símbolo muito forte de alegria e felicidade.
+                        Essa assimilação encaixa perfeitamente com o personagem já que ele comeu a Hito Hito no Mi,
+                        Modelo: Nika.Sua Akuma no Mi representa o Deus do Sol, que simboliza liberdade e
+                        esperança</span></p>
+                <a onclick="text3()" id="myBtn3"><b><i>Read more</i></b></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col img_margin borda">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.3upwkdp_uGF3X2dkP_APCwHaEK%26pid%3DApi&f=1&ipt=311fdbbacf8245a32b6011dcb6a49ae05920857a3df636e0e7676dc9f45f25a6&ipo=images"
+                    alt="">
+            </div>
+            <div class="col center margin_p">
+                <p>Desde que ele aprendeu a usar Haki, Luffy atingiu a força necessária para enfrentar <span
+                        id="dots4">...</span><span id="more4"> os piratas mais fortes do Novo
+                        Mundo. Enquanto lutava contra Katakuri, ele desenvolveu o Haki da Observação avançado, que pode
+                        prever alguns segundos
+                        do futuro</span></p>
+                <a onclick="text4()" id="myBtn4"><b><i>Read more</i></b></a>
+            </div>
+            <div class="col img_margin borda">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.fRGiomo3ERYuhK05BTt98AHaEK%26pid%3DApi&f=1&ipt=8a122286709181c661810466ce38c7be910412c67a2d04cefda6bde0bbc9e48d&ipo=images"
+                    alt="">
+            </div>
+        </div>
+        <div class="row">
             <div class="col ">
-                <a href="luffy.html"><button>
-                        Monkey D Luffy
+                <a href="ace.html"><button>
+                        Portgas D Ace
                     </button></a>
             </div>
             <div class="col ">
@@ -56,6 +145,70 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+<script>
+    function text1() {
+        var dots = document.getElementById("dots1");
+        var moreText = document.getElementById("more1");
+        var btnText = document.getElementById("myBtn1");
 
-    
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "<b><i>Read less</i></b>";
+            moreText.style.display = "inline";
+        }
+    }
+
+    function text2() {
+        var dots = document.getElementById("dots2");
+        var moreText = document.getElementById("more2");
+        var btnText = document.getElementById("myBtn2");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "<b><i>Read less</i></b>";
+            moreText.style.display = "inline";
+        }
+    }
+
+    function text3() {
+        var dots = document.getElementById("dots3");
+        var moreText = document.getElementById("more3");
+        var btnText = document.getElementById("myBtn3");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "<b><i>Read less</i></b>";
+            moreText.style.display = "inline";
+        }
+    }
+
+    function text4() {
+        var dots = document.getElementById("dots4");
+        var moreText = document.getElementById("more4");
+        var btnText = document.getElementById("myBtn4");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "<b><i>Read less</i></b>";
+            moreText.style.display = "inline";
+        }
+    }
+</script>
+
 </html>
