@@ -10,45 +10,47 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <style>
-    body{
+    body {
         background-color: #995c33;
         color: #332922;
     }
-    .container{
+
+    .container {
         background-color: #CC926C;
         border-radius: 10px;
         padding: 10px;
     }
 </style>
 <script src="bd.js"></script>
+
 <body>
     <div class="container">
         <div class="form">
-            <form>
+            <form onload="banco()">
                 <div class="row">
                     <div class="col-md-4">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputemail">
+                        <label for="inputid" class="form-label">Id</label>
+                        <input type="text" class="form-control" id="id" placeholder="id" value="null">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputsenha4" class="form-label">senha</label>
-                        <input type="password" class="form-control" id="inputsenha">
+                        <label for="inputNome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="Nome" placeholder="Nome">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputnome" class="form-label">nome</label>
-                        <input type="text" class="form-control" id="inputnome">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputdata_nascimento" class="form-label">data de nascimento</label>
-                        <input type="date" class="form-control" id="inputdata_nascimento">
-                    </div>
-                    <div class="col-md-4">
-                        <label for="inputCPF" class="form-label">CPF</label>
-                        <input type="number" class="form-control" id="inputcpf">
+                        <label for="inputdata_nascimento" class="form-label">Login</label>
+                        <input type="text" class="form-control" id="Login" placeholder="login">
                     </div>
                     <div class="col-md-2">
-                        <label for="inputtelefone" class="form-label">telefone</label>
-                        <input type="number" class="form-control" id="inputtelefone">
+                        <label for="inputcpf" class="form-label">cpf</label>
+                        <input type="text" class="form-control" id="cpf" placeholder="cpf">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputsenha" class="form-label">senha</label>
+                        <input type="text" class="form-control" id="senha" placeholder="senha">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputemail" class="form-label">email</label>
+                        <input type="text" class="form-control" id="email" placeholder="email">
                     </div>
                     <div class="col-12">
                         <div class="form-check">
@@ -60,10 +62,12 @@
                     </div>
                     <div class="row">
                         <div class="col-6">
-                            <button type="submit" onclick="local()" class="btn btn-primary">Sign in</button>
+                            <button type="button" class="btn " onclick="criar()">Cadastrar</button>
+                            <button type="button" class="btn " onclick="ler()">Coferir</button>
                         </div>
                         <div class="col-6">
-                            <button type="submit" onclick="login()" class="btn btn-primary">login</button>
+                            <button type="button" class="btn " onclick="atualizar()">Atualizar</button>
+                            <button type="button" class="btn " onclick="apagar()">Delete</button>
                         </div>
                     </div>
                 </div>
@@ -71,10 +75,3 @@
         </div>
     </div>
 </body>
-
-
-
-
-<!-- 
-
- -->
